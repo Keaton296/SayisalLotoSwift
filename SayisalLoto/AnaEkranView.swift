@@ -12,7 +12,9 @@ struct AnaEkranView: View {
     var body: some View {
         NavigationView{
             VStack(alignment: .center,spacing: 50) {
-                Text("Sayısal Loto")
+                Image("Logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
                     .fontWeight(.bold).font(.system(size:50))
                 Button(action: {suankiEkran = .SecimEkran}) {
                     Text("Oyna")

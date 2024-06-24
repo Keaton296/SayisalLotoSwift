@@ -10,6 +10,9 @@ import SwiftUI
 struct SecimEkranView: View {
     @Binding var suankiEkran: EkranDurumu
     @Binding var secilenSayilar : [Int]
+    @Binding var cekilenSayilar: [Int]
+    @Binding var dogruTahminSayisi: Int
+    @Binding var kazanc: Int
     let sutunlar = [
         GridItem(.flexible(),spacing:0),
         GridItem(.flexible(),spacing:0),
@@ -26,14 +29,48 @@ struct SecimEkranView: View {
             }
         }
     }
+    private func KazancHesapla(){
+        var temp : Set<Int> = []
+        while temp.count < 6 {
+            let randomSayi = Int.random(in: 1...49)
+            temp.insert(randomSayi)
+        }
+        var temp_two : Set<Int> = Set(secilenSayilar)
+        dogruTahminSayisi = temp.intersection(temp_two).count
+        cekilenSayilar = Array(temp)
+        if dogruTahminSayisi == 0 {
+            kazanc = 0
+        }
+        else if dogruTahminSayisi < 4 {
+            kazanc = 1000
+        }
+        else if dogruTahminSayisi < 6 {
+            kazanc = 10000
+        }
+        else {
+            kazanc = 100000
+        }
+    }
     var body: some View {
         VStack(alignment: .leading){
-            Button(action: {suankiEkran = .AnaEkran}) {
-                Image(systemName:"rectangle.portrait.and.arrow.right")
-                Text("Geri")
+            HStack()
+            {
+                Button(action: {suankiEkran = .AnaEkran}) {
+                    Image(systemName:"rectangle.portrait.and.arrow.right")
+                    Text("Geri")
+                }
+                .padding([.leading, .bottom], 20.0)
+                Spacer()
+                Button(action: {
+                    if secilenSayilar.count != 6 {return}
+                    else{ KazancHesapla()
+                        suankiEkran = .KazancEkran}
+                    }) {
+                    Image(systemName:"play.fill")
+                    Text("Oyna")
+                }
+                .padding(.trailing, 20.0)
             }
-            .padding([.leading, .bottom], 20.0)
-            
             
             Text("Kuponunuz için altı sayı seçin.")
                 .font(.system(size:24))
@@ -55,6 +92,6 @@ struct SecimEkranView: View {
 }
 
 struct SecimEkranView_Previews: PreviewProvider {   static var previews: some View {
-    SecimEkranView(suankiEkran: .constant(.SecimEkran), secilenSayilar: .constant([1,2,3]))
+    SecimEkranView(suankiEkran: .constant(.SecimEkran), secilenSayilar: .constant([1,2,3]),cekilenSayilar: .constant([1,2,3]),dogruTahminSayisi: .constant(0),kazanc: .constant(10))
     }
 }
