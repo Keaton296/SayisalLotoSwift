@@ -11,6 +11,7 @@
 		AB3D27132C29746B0076F7F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3D27122C29746B0076F7F9 /* ContentView.swift */; };
 		AB3D27152C29746D0076F7F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3D27142C29746D0076F7F9 /* Assets.xcassets */; };
 		AB3D27182C29746D0076F7F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3D27172C29746D0076F7F9 /* Preview Assets.xcassets */; };
+		AB84F3072C297930001199C1 /* NasilOynanirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84F3062C297930001199C1 /* NasilOynanirView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AB3D27122C29746B0076F7F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB3D27142C29746D0076F7F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB3D27172C29746D0076F7F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB84F3062C297930001199C1 /* NasilOynanirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasilOynanirView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AB3D27102C29746B0076F7F9 /* SayisalLotoApp.swift */,
 				AB3D27122C29746B0076F7F9 /* ContentView.swift */,
+				AB84F3062C297930001199C1 /* NasilOynanirView.swift */,
 				AB3D27142C29746D0076F7F9 /* Assets.xcassets */,
 				AB3D27162C29746D0076F7F9 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				AB3D27132C29746B0076F7F9 /* ContentView.swift in Sources */,
 				AB3D27112C29746B0076F7F9 /* SayisalLotoApp.swift in Sources */,
+				AB84F3072C297930001199C1 /* NasilOynanirView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
