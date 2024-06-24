@@ -14,13 +14,14 @@ enum EkranDurumu {
 }
 struct UygulamaView: View {
     @State private var suankiEkran: EkranDurumu = .AnaEkran
+    @State private var secilenSayilar: [Int] = []
     var body: some View {
         VStack{
             switch suankiEkran {
             case .AnaEkran:
                 AnaEkranView(suankiEkran: $suankiEkran)
             case .SecimEkran:
-                SecimEkranView(suankiEkran: $suankiEkran)
+                SecimEkranView(suankiEkran: $suankiEkran, secilenSayilar: $secilenSayilar)
             case .KazancEkran:
                 KazancEkranView(suankiEkran: $suankiEkran)
             }
@@ -32,3 +33,4 @@ struct UygulamaView_Previews: PreviewProvider {
         UygulamaView()
     }
 }
+
