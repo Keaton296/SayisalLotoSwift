@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		AB3D27112C29746B0076F7F9 /* SayisalLotoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3D27102C29746B0076F7F9 /* SayisalLotoApp.swift */; };
-		AB3D27132C29746B0076F7F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3D27122C29746B0076F7F9 /* ContentView.swift */; };
+		AB3D27132C29746B0076F7F9 /* UygulamaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3D27122C29746B0076F7F9 /* UygulamaView.swift */; };
 		AB3D27152C29746D0076F7F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3D27142C29746D0076F7F9 /* Assets.xcassets */; };
 		AB3D27182C29746D0076F7F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3D27172C29746D0076F7F9 /* Preview Assets.xcassets */; };
 		AB84F3072C297930001199C1 /* NasilOynanirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84F3062C297930001199C1 /* NasilOynanirView.swift */; };
+		AB84F3092C298BB7001199C1 /* AnaEkranView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84F3082C298BB7001199C1 /* AnaEkranView.swift */; };
+		AB84F30B2C298C42001199C1 /* SecimEkranView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84F30A2C298C42001199C1 /* SecimEkranView.swift */; };
+		AB84F30D2C298C53001199C1 /* KazancEkranView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84F30C2C298C53001199C1 /* KazancEkranView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB3D270D2C29746B0076F7F9 /* SayisalLoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SayisalLoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3D27102C29746B0076F7F9 /* SayisalLotoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayisalLotoApp.swift; sourceTree = "<group>"; };
-		AB3D27122C29746B0076F7F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB3D27122C29746B0076F7F9 /* UygulamaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UygulamaView.swift; sourceTree = "<group>"; };
 		AB3D27142C29746D0076F7F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB3D27172C29746D0076F7F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB84F3062C297930001199C1 /* NasilOynanirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasilOynanirView.swift; sourceTree = "<group>"; };
+		AB84F3082C298BB7001199C1 /* AnaEkranView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaEkranView.swift; sourceTree = "<group>"; };
+		AB84F30A2C298C42001199C1 /* SecimEkranView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecimEkranView.swift; sourceTree = "<group>"; };
+		AB84F30C2C298C53001199C1 /* KazancEkranView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KazancEkranView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				AB3D27102C29746B0076F7F9 /* SayisalLotoApp.swift */,
-				AB3D27122C29746B0076F7F9 /* ContentView.swift */,
+				AB3D27122C29746B0076F7F9 /* UygulamaView.swift */,
+				AB84F3082C298BB7001199C1 /* AnaEkranView.swift */,
+				AB84F30A2C298C42001199C1 /* SecimEkranView.swift */,
+				AB84F30C2C298C53001199C1 /* KazancEkranView.swift */,
 				AB84F3062C297930001199C1 /* NasilOynanirView.swift */,
 				AB3D27142C29746D0076F7F9 /* Assets.xcassets */,
 				AB3D27162C29746D0076F7F9 /* Preview Content */,
@@ -140,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB3D27132C29746B0076F7F9 /* ContentView.swift in Sources */,
+				AB84F30B2C298C42001199C1 /* SecimEkranView.swift in Sources */,
+				AB3D27132C29746B0076F7F9 /* UygulamaView.swift in Sources */,
+				AB84F3092C298BB7001199C1 /* AnaEkranView.swift in Sources */,
 				AB3D27112C29746B0076F7F9 /* SayisalLotoApp.swift in Sources */,
+				AB84F30D2C298C53001199C1 /* KazancEkranView.swift in Sources */,
 				AB84F3072C297930001199C1 /* NasilOynanirView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

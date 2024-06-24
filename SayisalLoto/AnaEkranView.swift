@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AnaEkranView.swift
 //  SayisalLoto
 //
 //  Created by Trakya11 on 24.06.2024.
@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AnaEkranView: View {
+    @Binding var suankiEkran: EkranDurumu
     var body: some View {
         NavigationView{
-            VStack(alignment: .center,spacing: 130) {
+            VStack(alignment: .center,spacing: 50) {
                 Text("Sayısal Loto")
                     .fontWeight(.bold).font(.system(size:50))
+                Button(action: {suankiEkran = .SecimEkran}) {
+                    Text("Oyna")
+                        .font(.title)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
                 NavigationLink(destination: NasilOynanirView()){
                     
                     Text("Nasıl Oynanır?")
@@ -22,14 +31,16 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .cornerRadius(8)
                     
+                    
                 }
                 
             }
         }
     }
 }
-struct ContentView_Previews: PreviewProvider {
+
+struct AnaEkranView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AnaEkranView(suankiEkran: .constant(.AnaEkran))
     }
 }

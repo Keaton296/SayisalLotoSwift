@@ -11,7 +11,7 @@ import SwiftUI
 struct SayisalLotoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UygulamaView()
         }
     }
 }
